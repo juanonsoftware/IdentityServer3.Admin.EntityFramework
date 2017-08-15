@@ -33,10 +33,14 @@ namespace Host
             {
                 var factory = new IdentityAdminServiceFactory();
                 factory.Configure();
-                adminApp.UseIdentityAdmin(new IdentityAdminOptions
+
+                var adminOptions = new IdentityAdminOptions
                 {
                     Factory = factory
-                });
+                };
+                adminOptions.AdminSecurityConfiguration.RequireSsl = false;
+
+                adminApp.UseIdentityAdmin(adminOptions);
             });
         }
     }

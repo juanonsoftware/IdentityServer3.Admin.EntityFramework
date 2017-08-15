@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.24720.0
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core.EntityFramework", "IdentityServer3.Admin.EntityFramework\Core.EntityFramework.csproj", "{7A400A5A-4B28-403E-8DE2-BD697239958F}"
 EndProject
@@ -12,6 +12,11 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core.EntityFramework.IntegrationTests", "Core.EntityFramework.IntegrationTests\Core.EntityFramework.IntegrationTests.csproj", "{F5A6B157-F860-47B4-9829-94BF25CA0790}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{BA666649-4665-4A1B-A00C-284EBAEA92E2}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\packages.config = .nuget\packages.config
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{B749C450-8314-431F-87FB-733F350BB824}"
 	ProjectSection(SolutionItems) = preProject
 		.nuget\packages.config = .nuget\packages.config
 	EndProjectSection
